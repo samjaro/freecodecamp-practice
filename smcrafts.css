@@ -1,0 +1,314 @@
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body{
+    margin:0;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+a{
+    text-decoration:none;
+}
+
+
+ul {
+    list-style-type: none; 
+    margin: 0;
+    padding: 0;
+}
+
+/* header banner bar for each page */
+
+header .row{
+  display: flex;
+  align-items: center;
+  background-color:none;
+  padding: 8px;
+}
+header a{
+    color:rgb(144, 12, 63);
+}
+header a:hover{
+    color:rgb(30,30,30);
+    text-decoration:none;
+}
+
+header h2 {
+  margin: 0 0 0 140px;
+  
+}
+header ul {
+  margin: 0 100;
+}
+header li {
+    float:right;
+}
+header li a {
+    display: inline-block;
+    text-align: center;
+    padding: 17px 13px;
+    text-decoration: none;   
+}
+.dropdown-content {
+    display:none;
+    position: absolute; 
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index:10000;
+    min-width:160px;
+    background-color: #f9f9f9;
+}
+.dropdown-content a {
+    display:block;
+    color:rgb(90,90,90);
+    text-decoration:none;
+    padding: 12px 16px;
+    margin: 0px;
+    text-align:left;
+ }
+.dropdown-content a:hover {
+    background-color: #8cd9ad;
+}
+
+.dropdown:hover .dropdown-content {
+    display:block;
+    opacity: 1;
+ }  
+
+
+
+
+
+
+
+
+
+ 
+   
+  
+ /* big image under banner at the top of every page */
+   
+.jumbotron {
+  display: flex;
+  align-items: center;  
+  background-size: cover;
+  color: #ffffff;  
+  height: 80vh;
+}
+
+#landingTopBg{
+    background-image: url('images/cuestasmall.jpg'); 
+}
+#pencilTopBg{
+   background-image: url('images/pencilbackground6.jpg'); 
+}
+#aboutTopBg{
+   background-image: url('images/samhousesmall.jpg'); 
+}
+
+.jumbotron h2 {
+  font-size: 60px;
+  font-weight: 700;
+  margin: 0;
+  color: #fff;
+  text-shadow: 0.25px 0.25px 0.25px #000000;
+}
+.jumbotron h3 {
+  margin: 0 0 20px;
+  color: #fff;
+}
+
+.jumbotron ul{
+    display:flex;
+    justify-content: center;
+    margin: 30px;
+}
+.jumbotron li h3 a{
+    padding:16px;
+    color:#fff;
+    text-decoration:none; 
+}
+.jumbotron li a:hover{
+    color:rgb(90,90,90);
+    text-decoration:none;
+}
+
+
+
+
+/* middle of the page, quote and title divider */
+
+
+#midPage{
+    display:flex;
+    text-align:center;
+    color: rgb(120,120,120);
+    flex-direction: column;
+    align-items: center;
+}
+#quote {
+    color: rgb(144, 12, 63);
+    font-family: Bradley hand ITC;
+    margin: 0 0 20 0px;
+} 
+#midPage h2{
+    margin:50px 0 30 0;
+}
+#midPage ul{
+    margin:50 0 70px 0;
+}
+
+#midPage li{
+    float:left;
+}
+
+#midPage li a {
+    padding: 17px 13px; 
+    text-decoration:none;
+    color:rgb(120,120,120);
+    font-size:16;
+}
+#midPage li a:hover {
+    color:rgb(40,40,40);
+  
+}
+
+   
+/* displays images in a line (cards) with 100% width grey backgroud divider */
+
+jumbotron #landingPics{
+    height:100px;
+    background-size: cover;
+    background-color: rgb(230,230,230);
+    color: rgb(120,120,120);
+    text-align:center;
+    display:flex;
+    flex-direction: column;
+    align-items: center;   
+
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align:justify;    
+    justify-content: center;
+    height: 300px;
+    width:230px;
+    position: relative;
+    margin: 0 30 30 30px;
+}
+.card img{    
+    opacity:1;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 8px
+}
+
+.cardMiddle {
+  transition: .5s ease;
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border: 1px solid white;
+  border-radius: 8px;
+  background-color:white;
+  text-align:center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%)
+
+}
+.cardMiddleTxt {
+ background-color:none;
+  font-size: 14px;
+  padding: 8px;
+  text-decoration:none;
+  color:black;
+}
+
+
+.card:hover{
+    opacity:0.5;
+}
+.card:hover .cardMiddle {
+  opacity: 1;
+}
+
+
+
+
+/*code for about page*/
+
+.textBox {
+    display: block;
+    margin: auto;   
+    width: 790px;
+    color:grey;
+    background-color: lightgrey;
+    text-align: center;
+    padding:22px;
+}
+
+.mainPara {
+    color:grey;
+    max-width: 800px;
+    text-align:justify;
+}
+
+
+#picFloatRight {
+    float:right;
+    padding: 0px 18px 18px 18px;
+}
+
+
+
+
+
+
+
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+footer .row{
+  display: flex;
+  align-items: center;
+  background-color:none;
+  padding: 8px;
+}
+
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+
+/* css for gallery */
+#gallery img{
+    height:;
+    width:;
+}
+
+
+/* css for non bootstrap */
+
+ 
+ 
+  
+
+
+
+
+
