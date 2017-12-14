@@ -1,0 +1,158 @@
+<html>
+<head>
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+   <link rel="stylesheet" href="smcrafts.css"> 
+</head>
+<body>
+
+<header class="container">
+    <div class="row">
+        <h2 class="col-sm-4"><a href="smcraftsIndex.html"> Samantha Roach</a></h2>
+        <nav  class="col-sm-8 text-right">
+            <ul>
+                <li> <a href="smcraftsAbout.html">About</a></li>
+                <li class="dropdown"><a href="smcraftsGallery.html">Gallery</a>    
+                    <div class ="dropdown-content">
+                        <a href="smcraftsGalleryPe.html">Pencil</a>
+                        <a href="smcraftsGalleryAc.html">Acrylic</a>
+                        <a href="smcraftsGalleryCa.html">Greetings cards</a>
+                        <a href="smcraftsGalleryCr.html">Crafts</a>
+                    </div>    
+                </li>    
+                <li><a href="#">Shop</a></li>
+                <li><a href="smcraftsContact.html">Contact</a></li>       
+            </ul>            
+        </nav>
+    </div>
+</header>
+
+
+
+<section class="jumbotron" id="landingTopBg">    
+    <div class="container">
+        <div class="row text-center">
+            <h2>Contact</h2>
+        </div>
+    </div>
+</section>
+
+
+
+
+<section class="container" id="midPage">    
+    <div class="row">
+        <div class="col-sm-12">
+            <h2><strong> Have a question? </strong></h2>    
+            <img src="http://leesamantha.com/wp-content/uploads/2015/10/section-divider-1.png">
+        </div>   
+    </div> 
+</section>   
+    
+    <div >
+        <div class="gallery">
+            <div class="block">
+                
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg">
+                <h4>email<h4>
+                <p id="smalltext" >sam@roach-uk.com</p>
+            </div>
+            <div class="block">
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg">
+                <h4>facebook<h4>
+                <p id="smalltext" >samroach@facebook.com</p>
+            </div>
+            <div class="block">
+                <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg">
+                <h4>twitter<h4>
+                <p id="smalltext" >samroach@facebook.com</p>
+            </div>
+            
+        </div>
+                  
+    </div>
+          
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div class = "content">
+        <div class = "header">
+            <h2>Comments</h2>
+        </div>       
+        <div id="formarea">
+        <form action="">
+            <table border="0">
+            <br>
+                <tr>
+                    <td class="label_col">First Name:</td>
+                    <td class="input_col"><input type="text" id="field1" name = "firstname" width="20" onblur="checkField1()";></td>
+                    <td rowspan="5"> <textarea name="message" placeholder="Any comments?" rows="8" cols="50" style="height: 100%";></textarea> 
+                </tr>
+                <tr>
+                    <td class="label_col">Surname</td>
+                    <td class="input_col"><input type="text" id="field2" name="surname" required onblur="checkField2()";></td>
+                <tr>
+                    <td class="label_col">Email address</td>
+                    <td class="input_col"><input type="email" id="field3" name="email" onblur="checkField3()";></td>
+                </tr> 
+                <tr>
+                    <td class="label_col">Which town are you interested in?</td>
+                    <td class="input_col"><input list="places" id="field4" name="place" required>
+                        <datalist id="places">
+                            <option value="Vitoria">
+                            <option value="London">
+                            <option value="Bedford">
+                            <option value="Northampton">
+                            <option value="Watford">
+                            <option value="Hitchin">             
+                        </datalist>
+                    </td>
+                </tr>
+                <tr>        
+                    <td class="label_col">I am over 18</td>                
+                    <td class="input_col"><input type="radio" name="over18" value="yes"></td>
+                </tr>  
+                <tr>               
+                    <td colspan="3"><button type="button" onclick="checkAll()">Submit</button></td>
+                </tr>                  
+            </table>        
+            
+        </form>
+        </div>
+            <p id="sentComment"></p>
+       
+    </div>
+</div>
+
+
+
+
+<footer class="container">
+    <div class="row">
+        <p class="col-sm-4">&copy; sam made crafts</p>
+        <ul class="col-sm-8">
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
+        </ul>
+        
+    </div> 
+</footer> 
+
+
+
+</body>
+</html>
