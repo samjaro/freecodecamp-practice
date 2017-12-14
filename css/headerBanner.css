@@ -47,7 +47,7 @@ header li a {
     text-align:left;
  }
 .dropdown-content a:hover {
-    background-color: #8cd9ad;
+    background-color: rgb(230,230,230);
 }
 
 .dropdown:hover .dropdown-content {
