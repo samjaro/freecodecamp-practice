@@ -1,8 +1,11 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    
     <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
    <link rel="stylesheet" href="smcrafts.css"> 
 </head>
 <body>
@@ -49,11 +52,12 @@
         </div>   
     </div> 
 </section>   
+
+
+<section class="contact-info">    
     
-    <div >
         <div class="gallery">
-            <div class="block">
-                
+            <div class="block">                
                 <img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg">
                 <h4>email<h4>
                 <p id="smalltext" >sam@roach-uk.com</p>
@@ -71,14 +75,75 @@
             
         </div>
                   
-    </div>
+
+</section>    
           
+       
+
+<section class="contact-form">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-xs-12 col-sm-4"></div>
+        <div class="col-xs-12 col-sm-4">
+            <form>
+                <div class="form-group">
+                    <label for="name">Full name:</label>
+                    <input class="form-control" type="text" name="name">            
+                </div>
+                
+                <div class="form-group">
+                    <label for="email">E-mail:</label>
+                    <input class="form-control" type="text" name="email">            
+                </div>
+      
+                <div class="form-group">
+                    <label for="category">Category:</label>
+                    <select class="form-control">
+                        <option>Pencil Drawing</option>
+                        <option>Acrylic</option> 
+                        <option>Greetings Cards</option>
+                        <option>Crafts</option>                        
+                    </select>    
+                </div> 
+                
+                <div class="form-group">
+                    <label for="art">Art:</label>
+                    <input class="form-control" list="art" type="text" name="art">         
+                        <datalist id="art">
+                            <option value="Deer card">
+                            <option value="Fox card">
+                            <option value="Penguin card">
+                            <option value="Snowflake">                                    
+                        </datalist>
+                </div>
+            
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control"></textarea>            
+                </div>
+   
+                <button class="btn btn-default btn-sm">submit</button>
+                
+            </form>
+        </div>
+        <div class="col-xs-12 col-sm-4"></div> 
+      </div>  
+    </div>
+</section>
 
 
 
 
 
 
+
+
+       
+
+          
+          
+          
+          
 
 
 
@@ -96,19 +161,16 @@
             <table border="0">
             <br>
                 <tr>
-                    <td class="label_col">First Name:</td>
+                    <td class="label_col">Name:</td>
                     <td class="input_col"><input type="text" id="field1" name = "firstname" width="20" onblur="checkField1()";></td>
-                    <td rowspan="5"> <textarea name="message" placeholder="Any comments?" rows="8" cols="50" style="height: 100%";></textarea> 
+                    <td rowspan="5"> <textarea name="message" placeholder="Message" rows="8" cols="50" style="height: 100%";></textarea> 
                 </tr>
-                <tr>
-                    <td class="label_col">Surname</td>
-                    <td class="input_col"><input type="text" id="field2" name="surname" required onblur="checkField2()";></td>
-                <tr>
+           
                     <td class="label_col">Email address</td>
                     <td class="input_col"><input type="email" id="field3" name="email" onblur="checkField3()";></td>
                 </tr> 
                 <tr>
-                    <td class="label_col">Which town are you interested in?</td>
+                    <td class="label_col">Which product are you interested in?</td>
                     <td class="input_col"><input list="places" id="field4" name="place" required>
                         <datalist id="places">
                             <option value="Vitoria">
@@ -120,10 +182,7 @@
                         </datalist>
                     </td>
                 </tr>
-                <tr>        
-                    <td class="label_col">I am over 18</td>                
-                    <td class="input_col"><input type="radio" name="over18" value="yes"></td>
-                </tr>  
+    
                 <tr>               
                     <td colspan="3"><button type="button" onclick="checkAll()">Submit</button></td>
                 </tr>                  

@@ -230,7 +230,7 @@ jumbotron #categoryPics{
 
 
 
-/* css for gallery */
+/* css for gallery - to centre divs within and displayed in a row*/
 .gallery{
     display:flex;    
     flex-direction:row; 
@@ -242,7 +242,7 @@ jumbotron #categoryPics{
 
 /* css for contact */
 
-/* divs in a row with their content centered and in a column */
+/* divs with their content centered and in a column */
 .block{ 
     text-align:center;
     justify-content: center;
@@ -264,4 +264,19 @@ jumbotron #categoryPics{
 }
 
 
+
+/* css for form */
+.contact-form{
+    width:100%;
+    background-color: #f3f3f3;
+    padding-top: 20px;
+    padding-bottom:60px;
+}
+
+.form-group textarea{
+    height:200px;
+}
+
+
+    
 
