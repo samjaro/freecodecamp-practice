@@ -44,9 +44,32 @@ ul {
 
 /* header banner bar for each page */
 
+.navbar-header .navbar-brand, #myNavbar li a  {
+    color:rgb(144, 12, 63);
+}
+.navbar-header .navbar-brand:hover, #myNavbar li a:hover  {
+    color:rgb(30,30,30);
+}
+
+
+
+.navbar .navbar-header a{
+    font-size: 33px !important;
+    margin: 0 0 0 140px !important; 
+    font-weight:lighter;
+    align-items: center;
+    vertical-align:middle;
+ 
+}
+
+
+
+
+
+
 .top .row{
   display: flex;
-  align-items: center;
+
   background-color:none;
   padding: 15px;
 }
@@ -122,6 +145,11 @@ ul {
   height: 80vh;
 }
 
+.main-container{
+    padding-top:50px;
+}
+
+
 #landingTopBg{
     background-image: url('images/cuestasmall.jpg'); 
 }
@@ -192,6 +220,9 @@ ul {
 #midPage h2{
     margin:50px 0 30 0;
 }
+#midPage img{
+    margin:50px;
+}
 #midPage ul{
     margin:50 0 70px 0;
 }
@@ -221,7 +252,7 @@ ul {
     display:flex;
     justify-content: center;  
     align-items: center;
-
+    margin-top:30px;
 }
 .card{
     display: flex;
@@ -231,9 +262,11 @@ ul {
     width:230px;
     position: relative;
     margin: 30px;
+    background-color:red;
 }
 
-.card img{    
+.card a img{   
+    position:absolute;
     opacity:1;
     width:100%;
     height:100%;
