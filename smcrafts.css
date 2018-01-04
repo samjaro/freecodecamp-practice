@@ -42,7 +42,12 @@ ul {
 
 
 
-/* header banner bar for each page */
+/* --------------------------------------
+   Navbar
+   -------------------------------------- */
+#searchInput{
+    width:200px;
+}
 
 .navbar-header .navbar-brand, #myNavbar li a  {
     color:rgb(144, 12, 63);
@@ -242,6 +247,8 @@ ul {
   
 }
 
+
+
    
 /* displays images in a line (cards) with 100% width grey backgroud divider */
 
@@ -383,5 +390,124 @@ ul {
 }
 
 
+
+
+
+
+
+/* --------------------------------------
+   Carousel
+   -------------------------------------- */
+#myCarousel {
+   margin-top: 50px;
+}
+
+#myCarousel .item {
+   height:490px ;
+   background-color: rgb(220,220,220);
+}
+.sliderPicContainer{
+    
+    height: 290px;
+    width:230px;
+    position: relative;  
+}
+.sliderPicContainer img{   
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:1;
+    margin-top: 30px;    
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 8px
+}
+.sliderPicContainer img:hover{  
+    opacity:0.5;
+}
+
+.carousel-caption{
+   font-size: 20px;
+   color:rgb(255,255,255);
+   text-shadow:none;
+   background-color:rred;
+   padding: 20px; 
+   margin: 20px;
+}
+.carousel-caption:hover{
+   color:rgb(240,240,240);   
+}
+
+.carousel-caption h1{
+   font-size: 32px;
+}
+
+.carousel-inner .item .row .col-sm-3, .col-sm-12{
+   background-color: none;
+   display:flex;
+   justify-content: center;  
+   align-items: center;
+}
+
+
+
+
+
+
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+	
+}
+
+/* Landscape phone to portrait tablet ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+#myCarousel .item {
+   height:200px;
+}
+.sliderPicContainer{  
+    height: 150px;
+    width:120px;
+    display:inline;
+}
+.carousel-caption p{
+   font-size: 16px;
+   color:white;
+}
+.carousel-caption h1{
+   font-size: 28px;
+}
+.noSmall{
+    display:none;
+}
+
+
+}
+/* Large desktop .........................................................................................................................*/
+@media (min-width: 1200px) {
+#myCarousel .item {
+   height:350px;
+}
+
+.sliderPicContainer{  
+    height: 290px;
+    width:230px;
+}
+.carousel-caption{
+   font-size: 20px;
+}
+.carousel-caption h1{
+   font-size: 32px;
+}
+
+
+
+	
+}
     
 
