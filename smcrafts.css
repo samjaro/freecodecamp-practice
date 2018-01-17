@@ -6,15 +6,30 @@
 @import url("css/footer.css");
 
 
+/* --------------------------------------
+   Typography
+   -------------------------------------- */
 
-
-/* --- Fonts --- */
 body {
   margin:0;
+  /* --- the 2 lines below sharpen up large text --- */
+  -webkit-font-smoothing:antialised;
+  text-rendering:optimizelegibility;
   font-family: "Open Sans", "Helvetica", "sans-serif";
-}
+  color:rgb(120,120,120);
+ }
+
 h1, h2, h3, h4 {
   font-family: "Montserrat", "sans-serif";
+}
+
+h3 small{
+    color:rgb(144, 12, 63);
+}
+
+
+.price{
+    color:rgb(159, 0, 15);
 }
 
 <style>
@@ -135,11 +150,6 @@ ul {
 
 
 
-
-
-
-
-
  /* big image under banner at the top of every page */
    
 .jumbotron {
@@ -149,7 +159,9 @@ ul {
   color: #ffffff;  
   height: 80vh;
 }
-
+.shopJumbo{
+    height:20vh;
+}
 .main-container{
     padding-top:50px;
 }
@@ -161,8 +173,17 @@ ul {
 #pencilTopBg{
    background-image: url('images/pencilbackground6.jpg'); 
 }
+#acrylicTopBg{
+   background-image: url('images/flamingoTop.jpg'); 
+}
 #aboutTopBg{
    background-image: url('images/samhousesmall.jpg'); 
+}
+#contactTopBg{
+   background-image: url('images/florida.jpg'); 
+}
+#shopTopBg{
+   background-image: url('images/monastery2Top.jpg'); 
 }
 
 .jumbotron h2 {
@@ -171,10 +192,17 @@ ul {
   margin: 0;
   color: #fff;
   text-shadow: 0.25px 0.25px 0.25px #000000;
+
 }
-.jumbotron h3, h4 {
+.jumbotron h3 h4 {
   margin: 0 0 20px;
   color: #fff;
+}
+.jumbotron a{
+  text-decoration:none;
+}
+.jumbotron a h2:hover{
+  color:rgb(240,230,230);
 }
 
 .jumbotron ul{
@@ -223,10 +251,10 @@ ul {
     margin: 0 0 20 0px;
 } 
 #midPage h2{
-    margin:50px 0 30 0;
+    margin:0px 0 30 0;
 }
 #midPage img{
-    margin:50px;
+    margin:30px;
 }
 #midPage ul{
     margin:50 0 70px 0;
@@ -236,13 +264,13 @@ ul {
     float:left;
 }
 
-#midPage li a {
-    padding: 17px 13px; 
+#midPage li a h3{
+    padding: 0px 13px; 
     text-decoration:none;
     color:rgb(120,120,120);
     font-size:16;
 }
-#midPage li a:hover {
+#midPage li a h3:hover {
     color:rgb(40,40,40);
   
 }
@@ -269,7 +297,6 @@ ul {
     width:230px;
     position: relative;
     margin: 30px;
-    background-color:red;
 }
 
 .card a img{   
@@ -316,16 +343,21 @@ ul {
 
 
 
-/*code for about page*/
-
+/* --------------------------------------
+   code for about page
+   -------------------------------------- */
 .textBox {
     display: block;
     margin: auto;   
     width: 790px;
     color:grey;
-    background-color: rgb(230,230,230);
-    text-align: center;
+    
     padding:22px;
+}
+
+#about{
+   background-color: rgb(230,230,230); 
+   text-align: center;
 }
 
 .mainPara {
@@ -377,7 +409,15 @@ ul {
 
 
 
-/* css for form */
+
+/* --------------------------------------
+   cSS for form
+   -------------------------------------- */
+.contact-info{
+    margimn:0px;
+    background-color:none;
+}   
+   
 .contact-form{
     width:100%;
     background-color: #f3f3f3;
@@ -390,8 +430,65 @@ ul {
 }
 
 
+/* --------------------------------------
+   code for shop page
+   -------------------------------------- */
+#shop{
+    background-color: rrgb(230,230,230);
+    margin-top:0;
+}
+   
+#shop img{
+    margin:0 50px 0px 0;
+}
+#shop .largeImg{
+    margin:0px 50px 50px 0;
+}
+#shop h4{
+    margin-top: 0 ;
+}
+#shop   a  {
+    text-decoration:none;
+}
+#shop p a{
+    color:rgb(120,120,120);*/
+ }
+#shop p a :hover {
+    color:rgb(40,40,40);*/
+}   
+#shop #quantityField{
+    width:55px;
+}
+
+.modal-dialog{
+    width:800px;
+}
+
+.miniGallery{
+    width:250px;
+}
+
+.miniGalleryPicContainer{    
+    height: 80px;
+    width:80px;
+    position: relative;  
+    margin:15px 20px 0 20px;
+}
+.miniGalleryPicContainer img{   
+    position:absolute;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    opacity:1;
+    margin-top: 30px;    
+    transition: .5s ease;
+    backface-visibility: hidden;
+    border-radius: 8px
+}
 
 
+
+   
 
 
 
@@ -431,7 +528,7 @@ ul {
    font-size: 20px;
    color:rgb(255,255,255);
    text-shadow:none;
-   background-color:rred;
+   
    padding: 20px; 
    margin: 20px;
 }
@@ -482,9 +579,7 @@ ul {
 .carousel-caption h1{
    font-size: 28px;
 }
-.noSmall{
-    display:none;
-}
+
 
 
 }
@@ -502,7 +597,7 @@ ul {
    font-size: 20px;
 }
 .carousel-caption h1{
-   font-size: 32px;
+   font-size: 40px;
 }
 
 

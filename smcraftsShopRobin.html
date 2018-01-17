@@ -78,11 +78,10 @@
 
 
 <section class="main-container">
-    <section class="jumbotron" id="landingTopBg">    
+    <section class="jumbotron shopJumbo" id="landingTopBg">    
         <div class="container">
             <div class="row text-center">
-                <h2>Sam Made Crafts</h2>
-                <h3>Ecological crafts inspired by nature</h3>
+                <a href="smcraftsShop.html"><h2>Shop</h2></a>
             </div>
         </div>
     </section>    
@@ -91,27 +90,130 @@
 
 
 
-<section class="container-fluid" id="midPage">
-    <div class="row">
-        <div class="col-sm-12">
-            <h3 id="quote"><strong> “I dream my art, then I paint my dream" - Vincent Van Gogh </strong></h3>  
-        </div>   
-    </div>    
-       
-        <h2><strong> my work </strong></h2>    
-        <img src="http://leesamantha.com/wp-content/uploads/2015/10/section-divider-1.png">
-           
+
+
+<section class="container" id="shop">
+    <div class="textBox">  <!--class from ABOUT page which centralises the txt box-->
+        <div class="row"><!--row for alignment of image next to text-->
+            <div class="col-sm-6">
+                <a href="#robinModal" data-toggle="modal"><img src="images/rrobincardLG.jpg" class="pull-left largeImg">
+                See all images</a>
+                
+                
+                <div class="modal fade" id="robinModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+										</div><!--end of modal-header-->
+											
+											<div class="modal-body">
+												<div class="row">
+                                                    <div class="col-sm-6">
+                                                        <img src="images/rrobincardLG.jpg" class="pull-left">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <h4>Robin singing in the snow</h4>
+                                                        <p>Click on the image to enlarge it</p>
+                                                        <hr>
+                                                        <div class="miniGallery">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/rrobincardXS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/rrobincard2XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/rrobincard3XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/rrobincard4XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/rrobincard5XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/rrobincard6XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                            </div>
+                                                            
+                                                            
+                                                        </div><!--end mini galery-->
+                                                    </div>
+                                                </div>
+                                            </div><!--end of modal-body-->
+                                            
+                                            
+											<div class="modal-footer">
+													<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> 
+											</div><!--end modal-footer-->
+										
+									</div><!--end of modal-content-->
+								</div><!--end of modal-dialog-->
+                </div><!--end of robinModal-->
+                
+                
+                
+                
+            </div><!--end of--col-sm-6 for image-->
+
+
+
+
+            
+            <div class="col-sm-6">
+                <h4>Robin Singing</h4>
+                <h5 class="price"><strong>£5</strong></h5> 
+                <hr>
+                <p>Robin singing in the snow, details handpainted in acrylic.</p>
+                <p><strong>Materials:</strong> Handmade paper, sequins, string.</p>
+                <p><strong>Handmade paper</strong> made in my kitchen, from an assortment of scrap paper including junk mail, old envelopes and discarded paper from the office.</p>
+                <p>I combine the paper to create the colours for my designs, turning unwanted scrap into something beautiful.</p>
         
-        <div class="row">
-            <ul class="col-lg-12">
-                <li> <a href="smcraftsGalleryPe.html"><h3>Pencil drawings</h3></a></li>
-                <li> <a href="smcraftsGalleryAc.html"><h3>Acrylic Paintings</h3></a><li>    
-                <li> <a href="smcraftsGalleryCa.html"><h3>Greetings cards</h3></a></li>
-                <li> <a href="smcraftsGalleryCr.html"><h3>Crafts</h3></a></li>  
-            </ul>                   
-        </div>
-    </div>    
-</section>  
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <select class="form-control" id="quantityField" onblur="checkQuantityField()">
+                        <option>1</option>
+                        <option>2</option> 
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>                        
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>    
+                </div> 
+                 <button type="button" class="btn btn-secondary"><spam class="glyphicon glyphicon-shopping-cart"></spam> Add to basket</button>
+                                                                                                                
+            </div>  
+        </div><!--end row- with pic and pic text-->        
+		<hr>
+         
+
+    </div><!--end text-box-->
+</section><!--end container-->
+
+
+
+
+
+
+
  
 
  <!--carousel-->
@@ -211,7 +313,7 @@
                             </div>	
                             <div class="col-xs-12 col-sm-3 hidden-xs">
                                 <div class="sliderPicContainer">
-                                    <img src="images/rrobincardSM.jpg">
+                                    <img src="images/robincardSM.jpg">
                                 </div>    
                             </div>	
                         </div>	
@@ -242,7 +344,7 @@
                             </div>	
                             <div class="col-xs-12 col-sm-3 hidden-xs">
                                 <div class="sliderPicContainer">
-                                    <img src="images/rrobincardSM.jpg">
+                                    <img src="images/robincardSM.jpg">
                                 </div>    
                             </div>	
                         </div>	
