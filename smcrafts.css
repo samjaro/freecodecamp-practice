@@ -3,7 +3,7 @@
 @import url("http://fonts.googleapis.com/css?family=Open+Sans:400,300,700|Montserrat:400,700");
 
 /* --- Components design --- */
-@import url("css/footer.css");
+@import url("cssPages/footer.css");
 
 
 /* --------------------------------------
@@ -17,6 +17,7 @@ body {
   text-rendering:optimizelegibility;
   font-family: "Open Sans", "Helvetica", "sans-serif";
   color:rgb(120,120,120);
+  background-color:rgb(240,240,240);
  }
 
 h1, h2, h3, h4 {
@@ -26,10 +27,26 @@ h1, h2, h3, h4 {
 h3 small{
     color:rgb(144, 12, 63);
 }
-
+#quote {
+    colorrrr: rgb(144, 12, 63);
+    font-family: Bradley hand ITC;
+    margin: 0 0 20 0px;
+}
 
 .price{
     color:rgb(159, 0, 15);
+}
+
+a.eco, span.eco, h3.eco{
+    color:rgb(75, 193, 91);
+}
+a.eco:hover, a.art:hover{
+    color:rgb(120,120,120)!important;
+    text-decoration:none;
+}
+
+a.art, span.art, h3.art, h4.art{
+    color:rgb(144, 12, 63);
 }
 
 <style>
@@ -58,30 +75,206 @@ ul {
 
 
 /* --------------------------------------
+   Global Styles
+   -------------------------------------- */
+ .centreText{
+    text-align:center;
+ }  
+ 
+.marginLeft{
+    padding-left:40px;
+} 
+   
+.tag{
+   font-size: 15px;
+   ffont-family: Bradley hand ITC;
+   position:absolute;
+   top:-10px;
+   right:-10px;
+   padding:10px;
+    background-color:rgb(234,234,234);
+    color:rgb(159, 0, 15);
+    ccolor: rgb(144, 12, 63);
+}
+.tag span{
+    font-size:10px;
+    font-weight:lighter;
+}   
+   
+   
+.soldout, .soldout:hover, .soldout:active, .soldout:visited{
+    color:#99bbff;
+    ppointer-events: none;
+    cursor: default;
+    -webkit-box-shadow: none;
+    box-shadow: none;    
+}
+
+.quote{
+    text-align:center;
+    
+}
+.white{
+    background-color:white;
+    padding:20px;
+}
+
+.red{
+    background-color:red;
+    width:50px;
+    height:50px;
+}
+
+
+.readMore{
+    display:flex;
+    flex-direction:row;
+}
+.readMore p{
+    line-height:24px;
+}
+.readMoreBox{
+    width:25px;
+    height:25px;
+    border:0.5px solid rgb(225,225,225);
+    text-align:center;
+    margin-right:8px;
+}
+.readMore span{
+    text-align:center;
+    align-items: center;
+    vertical-align:middle;
+    font-size:12px;
+}
+
+
+/* --------------------------------------
+   code for frames to hold context and images
+   -------------------------------------- */
+
+.centralFrame {  /*used on ABOUT, SHOP AND SHOP ITEM pages*/
+    display: block;
+    margin: auto;   
+    margin-top:15px;
+    widthhhh: 2000px;
+    width: 65vw;
+    color:grey;
+    padding:22px;
+    maxx-width: 800px;
+    background-color:rrred;    
+}
+
+.centralFrameSm {  /*used on PAPER pages*/
+    display: flex;
+    margin: auto;   
+    margin-top:0px;
+    width: 45vw;
+    color:grey;
+    padding:0px;
+    maxx-width: 800px;
+    background-color:yellowwwww;   
+    justify-content: center;  
+    align-items: center;
+}
+   
+.panel{ /* used for picFrame model to display frames selections */
+    padding:18px;
+    max-width: 380px;
+    aaaaaaalign-items: center;
+    ttttttttext-align: center;
+    background-color:reddddd;
+    
+}
+.panel.h4{
+    line-height:30px;
+}
+.panelInnerrrrrrrr{ DELETED
+    padding:18px;
+}
+
+.panel img{ /*used in picFrame modal */
+   paddinggggg:20px;
+   text-align:center;
+}
+
+   
+.panelImgHolder{
+    widthhhh:340px;
+    heightttt:240px;
+    widthhh:25vw;
+    heightttt:21vw;
+    padding:0px;
+    
+}
+
+.panelImgHolder img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    
+}
+
+.xsImg{
+    width:8vw;
+    height:8vw;
+    margin:13px;
+}
+.xsImgHolderrrrrrr{   DELETE
+    
+    position: relative;
+    width:80px;
+    height:80px;
+    background-color:red;
+} 
+   
+#featuresssssssssssssssss{  /* USed in picFrame modal to display frame options */
+   text-align: center;
+   align-items: center;
+}
+#featuresssss img{
+   paddinggggg:20px;
+   
+   
+   text-align:center;
+} 
+   
+   
+
+
+/* --------------------------------------
    Navbar
    -------------------------------------- */
 #searchInput{
     width:200px;
 }
 
-.navbar-header .navbar-brand, #myNavbar li a  {
+#myNavbar li a  {
     color:rgb(144, 12, 63);
 }
-.navbar-header .navbar-brand:hover, #myNavbar li a:hover  {
+.navbar-brand:hover, #myNavbar li a:hover{
     color:rgb(30,30,30);
 }
 
-
+.navbar-header .navbar-brand{
+   padding: 13px;
+   font-size: 33px !important;
+}
 
 .navbar .navbar-header a{
     font-size: 33px !important;
-    margin: 0 0 0 140px !important; 
+    mmargin: 0 0 0 140px; 
+    margin-left: 15vh !important;
     font-weight:lighter;
     align-items: center;
     vertical-align:middle;
  
 }
 
+ li a p .eco  {
+    color:rgb(144, 12, 63);
+    padding-bottom:30px;
+    
+}
 
 
 
@@ -151,13 +344,15 @@ ul {
 
 
  /* big image under banner at the top of every page */
-   
+
 .jumbotron {
   display: flex;
   align-items: center;  
   background-size: cover;
   color: #ffffff;  
   height: 80vh;
+  margin:0px;
+  margin-top:0px;
 }
 .shopJumbo{
     height:20vh;
@@ -171,19 +366,22 @@ ul {
     background-image: url('images/cuestasmall.jpg'); 
 }
 #pencilTopBg{
-   background-image: url('images/pencilbackground6.jpg'); 
+   background-image: url('images/cuestasmall.jpg'); 
 }
 #acrylicTopBg{
-   background-image: url('images/flamingoTop.jpg'); 
+   background-image: url('images/cuestasmall.jpg'); 
 }
 #aboutTopBg{
    background-image: url('images/samhousesmall.jpg'); 
 }
 #contactTopBg{
-   background-image: url('images/florida.jpg'); 
+   background-image: url('images/paper.jpg'); 
 }
 #shopTopBg{
-   background-image: url('images/monastery2Top.jpg'); 
+   background-image: url('images/paper.jpg'); 
+}
+#paperTopBg{
+   background-image: url('images/paper.jpg'); 
 }
 
 .jumbotron h2 {
@@ -235,23 +433,19 @@ ul {
 
 
 
-/* middle of the page, quote and title divider */
+/* mid page titles, dividers and links */
 
 
 #midPage{
     display:flex;
-    text-align:center;
+    ttext-align:center;
     color: rgb(120,120,120);
     flex-direction: column;
     align-items: center;
 }
-#quote {
-    color: rgb(144, 12, 63);
-    font-family: Bradley hand ITC;
-    margin: 0 0 20 0px;
-} 
+ 
 #midPage h2{
-    margin:0px 0 30 0;
+    margin:50px 0 0 0;
 }
 #midPage img{
     margin:30px;
@@ -260,29 +454,38 @@ ul {
     margin:50 0 70px 0;
 }
 
-#midPage li{
-    float:left;
-}
-
-#midPage li a h3{
-    padding: 0px 13px; 
+.categoryLinks a {
+    
     text-decoration:none;
+}
+.categoryLinks h4{
     color:rgb(120,120,120);
-    font-size:16;
+    padding: 0px 13px;
+    font-size:16px;
+    
 }
-#midPage li a h3:hover {
+
+
+.categoryLinks  h4:hover {
     color:rgb(40,40,40);
-  
+    
 }
 
-
+/* css for gallery - to centre divs within and displayed in a row*/
+.gallery{
+    display:flex;    
+    flex-direction:row; 
+    text-align:center;
+    justify-content: center;
+}
 
    
 /* displays images in a line (cards) with 100% width grey backgroud divider */
 
  #categoryPics{
 
-    background-color: rgb(230,230,230);
+    background-colorrrr: rgb(230,230,230);
+    background-color: red;
     color: rgb(120,120,120);
     display:flex;
     justify-content: center;  
@@ -296,7 +499,9 @@ ul {
     height: 300px;
     width:230px;
     position: relative;
-    margin: 30px;
+    marginn: 20 30 10 30px;
+    margin:auto;
+    margin-top:20px;
 }
 
 .card a img{   
@@ -346,24 +551,18 @@ ul {
 /* --------------------------------------
    code for about page
    -------------------------------------- */
-.textBox {
-    display: block;
-    margin: auto;   
-    width: 790px;
-    color:grey;
-    
-    padding:22px;
-}
+
 
 #about{
-   background-color: rgb(230,230,230); 
-   text-align: center;
+   backgground-color: rgb(230,230,230);
+   background-color: white;   
+   text-align: centeer;
+   text-align:justify;
 }
 
+/*---------------text-align: centeer; moved from mainpara into #about, so bottom pic is no longer centralised*/
 .mainPara {
-    color:grey;
-    max-width: 800px;
-    text-align:justify;
+    
 }
 
 
@@ -372,15 +571,6 @@ ul {
     padding: 0px 18px 18px 18px;
 }
 
-
-
-/* css for gallery - to centre divs within and displayed in a row*/
-.gallery{
-    display:flex;    
-    flex-direction:row; 
-    text-align:center;
-    justify-content: center;
-}
 
 
 
@@ -434,7 +624,7 @@ ul {
    code for shop page
    -------------------------------------- */
 #shop{
-    background-color: rrgb(230,230,230);
+    background-color: rrrrgb(230,230,230);
     margin-top:0;
 }
    
@@ -442,7 +632,7 @@ ul {
     margin:0 50px 0px 0;
 }
 #shop .largeImg{
-    margin:0px 50px 50px 0;
+    margin:0px 50px 10px 0;
 }
 #shop h4{
     margin-top: 0 ;
@@ -502,6 +692,7 @@ ul {
 #myCarousel .item {
    height:490px ;
    background-color: rgb(220,220,220);
+   background-colorrrr: white;
 }
 .sliderPicContainer{
     
@@ -547,6 +738,35 @@ ul {
    align-items: center;
 }
 
+.galleryCarouselItem{
+    position:relative;
+    
+}
+
+.galleryCarouselItem:hover .slideText{
+    opacity: 1;
+}
+
+
+.slideText{
+    position: absolute;
+    transition: .5s ease;
+    opacity: 0;
+    top: 50%;
+    left: 50%;
+    padding:8px;
+    background-color:rgb(224,224,224);
+    text-align:center;
+    border-radius: 20px;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%)
+    
+    backface-visibility: hidden;
+}
+
+
+
+
 
 
 
@@ -559,7 +779,19 @@ ul {
 
 /* Portrait & landscape phone */
 @media (max-width: 480px) {
-	
+	.carousel-caption p{
+        font-size: 9px;
+        color:green;
+    }
+    .carousel-caption h1{
+        font-size: 18px;
+    }
+    
+    .centralFrame{
+        width:100vh;
+    }
+    
+    
 }
 
 /* Landscape phone to portrait tablet ------------------------------------------------------------------------------------------------------- */
@@ -579,8 +811,13 @@ ul {
 .carousel-caption h1{
    font-size: 28px;
 }
+.categoryLinks h4{
+    font-size:11px;
+}
 
-
+.cattegoryLinks a{
+   float:left;
+}
 
 }
 /* Large desktop .........................................................................................................................*/
@@ -599,7 +836,9 @@ ul {
 .carousel-caption h1{
    font-size: 40px;
 }
-
+.categoryLinks a{
+   float:left;
+}
 
 
 	

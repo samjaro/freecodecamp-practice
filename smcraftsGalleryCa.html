@@ -1,36 +1,82 @@
 <html>
 <head>
-    <title>SamMadeCraftsGallery</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, scale=1">    
-    
-    <link href='https://fonts.googleapis.com/css?family=Roboto:300,400,700' rel='stylesheet' type='text/css'>
 
+    <!-- The below 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, scale=1">
+    
+    <title>SamMadeCraftsGallery</title>
+   
+    
+    
+    <!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+    
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="smcrafts.css">
-</head>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <!-- Bootstrap CSS -->
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">    
+    <link rel="stylesheet" href="smcrafts.css">
 
 <body>
-<header class="container">
-    <div class="row">
-        <h2 class="col-sm-4"><a href="index.html"> Samantha Roach</a></h2>
-        <nav  class="col-sm-8 text-right">
-            <ul>
-                <li> <a href="smcraftsAbout.html">About</a></li>
-                <li class="dropdown"><a href="smcraftsGallery.html">Gallery</a>    
-                    <div class ="dropdown-content">
-                        <a href="smcraftsGalleryPe.html">Pencil</a>
-                        <a href="smcraftsGalleryAc.html">Acrylic</a>
-                        <a href="smcraftsGalleryCa.html">Greetings cards</a>
-                        <a href="smcraftsGalleryCr.html">Crafts</a>
-                    </div>    
-                </li>    
-                <li><a href="#">Shop</a></li>
-                <li><a href="smcraftsContact.html">Contact</a></li>    
-            </ul>            
-        </nav>
-    </div>
-</header>    
+<div class="container">
+    <div class="navbar navbar-default navbar-fixed-top">
+        <div class="container">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+            </button>
+            <div class="navbar-header">
+            <a class="navbar-brand" href="index.html">Sammy</a>
+            </div>
+            
+            <div class="collapse navbar-collapse nav-collapse  navbar-responsive-collapse" id="myNavbar">
+            
+                <form class="navbar-form navbar-right">
+                    <div class="form-group">
+                        <input class="form-control" type="text" name="search" placeholder="search" id="searchInput">
+                        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                    </div>
+                    
+                </form>
+                <ul class="nav navbar-nav navbar-right">
+                        <li class="active"> <a href="smcraftsAbout.html">About</a></li>
+                        <li class="dropdown">
+                            <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span>&nbsp;Gallery</a>
+                            <ul class="dropdown-menu">
+                                <li><a href="smcraftsGalleryPe.html">All</a></li>
+                                <li class="divider"></li>	
+                                <li><a href="smcraftsGalleryPe.html">Pencil</a></li>
+                                <li><a href="smcraftsGalleryAc.html">Acrylic</a></li>
+                                <li class="divider"></li>	
+                                <li class="dropdown-header">Sam made paper</li>
+                                <li><a href="smcraftsGalleryCa.html">Greetings cards</a></li> 
+                                <li><a href="smcraftsGalleryPe.html">Notebooks</a></li>
+                            </ul>
+                        </li>    
+                        <li><a class="eco" href="smcraftsShop.html">Sam made paper</a></li>
+                        <li><a href="smcraftsContact.html">Sam made art</a></li>                     
+                        <li><a href="smcraftsShop.html">Shop</a></li>
+                        <li><a href="smcraftsContact.html">Contact</a></li>        
+                </ul>         
+            </div>
+         
+        </div>
+    </div><!--end nav-->
+</div><!--end nav container-->   
     
 
 
@@ -42,7 +88,7 @@
                 <li><h3><a href="smcraftsGalleryPe.html">Pencil Drawings</a></h3></li>
                 <li><h3><a href="smcraftsGalleryAc.html">Acrylic</a></h3></li>
                 <li><h3 id="currentPage">Greetings cards</h3></li>
-                <li><h3><a href="smcraftsGalleryCr.html">Crafts</a></h3></li>
+                <li><h3><a href="smcraftsGalleryCr.html">Notebooks</a></h3></li>
             </ul>
         </div>
     </div>
@@ -51,64 +97,159 @@
 
 
 <section class="gallery">
-    <div class="container">
-        
+    <div class="container">        
+            <div class="col-xs-12 col-sm-3">             
+                <div class="card">                                              
+                    <a href="#robinGalleryModal" data-toggle="modal"><img src="images/rrobincard.jpg" alt="Robin Christmas Card">
+                        <div class="label tag"><span class="glyphicon glyphicon-star"></span> New</div>
+                            <div class="cardMiddle">
+                                <div class="cardMiddleTxt">Robin</div>
+                            </div>
+                    </a>
+                </div> 
+                <a class="btn" href="smcraftsShopRobin.html">View in shop</a>
+ <!--Modal starts-->   <div class="modal fade" id="robinGalleryModal"> 
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+										</div><!--end of modal-header-->
+											
+											<div class="modal-body">
+                                    <!--carousel-->
+                                                <div class="carousel slide" id="cardCarousel">
 
-            
+                                   <!--Indicators-->
+                                                <ol class="carousel-indicators">
+                                                    <li class="active" data-slide-to="0" data-target="#cardCarousel"></li>
+                                                    <li data-slide-to="1" data-target="#cardCarousel"></li>
+                                                    
+                                                </ol>
+                                                
+                               <!-- wrapper for slides -->
+                                                <div class="carousel-inner">
+                                    <!--slides-->
+                                                    <div class="item active galleryCarouselItem" id="cardSlide1">
+                                                        <a href="smcraftsShopRobin.html">
+                                                            <div class="col-sm-12">
+                                                                <img src="images/rrobincardXL.jpg">
+                                                                    <div class="slideText">
+                                                                        <h4>View in shop <span class="glyphicon glyphicon-hand-right"></span></h4>
+                                                                    </div>
+                                                            </div><!--col-sm-12-->
+                                                        </a>    
+                                                    </div><!--item slide 1-->
+                                                    
+                                                    <div class="item galleryCarouselItem" id="cardSlide2">
+                                                        <a href="smcraftsShop.html">
+                                                            <div class="col-sm-12">
+                                                                <img src="images/penguinCardXL.jpg">
+                                                                    <div class="slideText">
+                                                                        <h4>View in shop</h4>
+                                                                    </div>
+                                                            </div><!--col-sm-12-->
+                                                        </a>    
+                                                    </div><!--item slide 2-->
+                                                    
+                                                    <div class="item galleryCarouselItem" id="cardSlide3">
+                                                        <a href="smcraftsShop.html">
+                                                            <div class="col-sm-12">
+                                                                <img src="images/deerCardXL.jpg">
+                                                                    <div class="slideText">
+                                                                        <h4>View in shop</h4>
+                                                                    </div>
+                                                            </div><!--col-sm-12-->
+                                                        </a>    
+                                                    </div><!--item slide 3-->
+                                                    
+                                                    <div class="item galleryCarouselItem" id="cardSlide4">
+                                                        <a href="smcraftsShop.html">
+                                                            <div class="col-sm-12">
+                                                                <img src="images/snowCardXL.jpg">
+                                                                    <div class="slideText">
+                                                                        <h4>View in shop</h4>
+                                                                    </div>
+                                                            </div><!--col-sm-12-->
+                                                        </a>    
+                                                    </div><!--item slide 4-->
+                                                    
+                                                    <div class="item galleryCarouselItem" id="cardSlide5">
+                                                        <a href="smcraftsShop.html">
+                                                            <div class="col-sm-12">
+                                                                <img src="images/foxCardXL.jpg">
+                                                                    <div class="slideText">
+                                                                        <h4>View in shop</h4>
+                                                                    </div>
+                                                            </div><!--col-sm-12-->
+                                                        </a>    
+                                                    </div><!--item slide 5-->
+                                                    
+                                                </div>	<!--carousel-inner-->
+                                     <!-- controls-->
+                                                <a class="left carousel-control" data-slide="prev" href="#cardCarousel"><span class="icon-prev"></span></a>
+                                                <a class="right carousel-control" data-slide="next" href="#cardCarousel"><span class="icon-next"></span></a>
+			
+                                                </div><!-- end carousel -->	
+                                            </div><!--end of modal-body-->
+											<div class="modal-footer">
+													<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> 
+											</div><!--end modal-footer-->
+										
+									</div><!--end of modal-content-->
+								</div><!--end of modal-dialog-->
+                </div><!--end of robinGalleryModal-->        
+            </div><!--end of col-sm-3 robin pic container-->  
+
             <div class="col-xs-12 col-sm-3">
                 <div class="card">
-                    <a href="smcraftsGallery.html"><img src="images/penguincard.jpg" alt="">
+                    <a href="#robinGalleryModal" data-toggle="modal"><img src="images/penguincard.jpg" alt="">
                     <div class="cardMiddle">
                         <div class="cardMiddleTxt">Penguins</div>
                     </div>
                     </a>
                 </div>
+                <a class="btn soldout" href="#" data-original-title="out of stock" rel="tooltip">View in shop</a>
             </div>
             
             <div class="col-xs-12 col-sm-3">
                 <div class="card">
-                    <a href="smcraftsGallery.html"><img src="images/deercard.jpg" alt="">
+                    <a href="#robinGalleryModal" data-toggle="modal"><img src="images/deercard.jpg" alt="">
                     <div class="cardMiddle">
                         <div class="cardMiddleTxt">Deer</div>
                     </div>
                     </a>
                 </div>    
+                <a class="btn soldout" href="#" data-original-title="out of stock" rel="tooltip">View in shop</a>
             </div>
       
 
             <div class="col-xs-12 col-sm-3">
                 <div class="card">
-                    <a href="smcraftsGallery.html"><img src="images/snowcard.jpg" alt="">
+                    <a href="#robinGalleryModal" data-toggle="modal"><img src="images/snowcard.jpg" alt="">
                     <div class="cardMiddle">
                         <div class="cardMiddleTxt">Snowflake</div>
                     </div>
                     </a>
                 </div>    
+                <a class="btn soldout" href="#" data-original-title="out of stock" rel="tooltip">View in shop</a>
             </div> 
             
             <div class="col-xs-12 col-sm-3">
                 <div class="card">
-                    <a href="smcraftsGallery.html"><img src="images/foxcard.jpg" alt="">
+                    <a href="#robinGalleryModal" data-toggle="modal"><img src="images/foxcard.jpg" alt="">
                     <div class="cardMiddle">
                         <div class="cardMiddleTxt">Fox and Rabbit</div>
                     </div>
                     </a>
                 </div>    
+                <a class="btn soldout" href="#" data-original-title="out of stock" rel="tooltip">View in shop</a>
             </div>
             
-            <div class="col-xs-12 col-sm-3">
-                <div class="card">
-                    <a href="smcraftsGallery.html"><img src="images/rrobincard.jpg" alt="">
-                    <div class="cardMiddle">
-                        <div class="cardMiddleTxt">Robin</div>
-                    </div>
-                    </a>
-                </div>    
-            </div>
+
         
     
         
-    </container>
+    </div>
 </section>
 
 
@@ -128,11 +269,22 @@
             <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
             <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
         </ul>
-        
     </div>
-    
-
-
 </footer>
+
+	<!-- All Javascript at the bottom of the page for faster page loading -->
+		
+	<!-- First try for the online version of jQuery-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+	
+	<!-- If no online access, fallback to our hardcoded version of jQuery -->
+	<script>window.jQuery || document.write('<script src="includes/js/jquery-1.8.2.min.js"><\/script>')</script>
+	
+	<!-- Bootstrap JS -->
+	<script src="bootstrap/js/bootstrap.min.js"></script>
+	
+	<!-- Custom JS -->
+	<script src="smcrafts.js"></script>
+
 </body>
 </html>

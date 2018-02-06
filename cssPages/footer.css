@@ -1,0 +1,60 @@
+/*code for footer*/
+
+footer {
+  font-size: 12px;
+  padding: 20px 0;
+}
+footer .row{
+  display: flex;
+  align-items: center;
+  background-color:none;
+  padding: 8px;
+}
+
+
+footer .col-sm-8 {
+  display: flex;
+  justify-content: flex-end;
+}
+footer li img {
+  width: 32px;
+  height: 32px;
+}
+
+/* --------------------------------------
+   Media Queries
+   -------------------------------------- */
+
+/* Portrait & landscape phone */
+@media (max-width: 480px) {
+footer {
+    font-size:8px;
+}
+footer li img {
+  width: 20px;
+  height: 17px;
+}
+
+
+}
+
+/* Landscape phone to portrait tablet ------------------------------------------------------------------------------------------------------- */
+@media (max-width: 768px) {
+
+
+
+}
+/* Large desktop .........................................................................................................................*/
+@media (min-width: 1200px) {
+
+
+.carousel-caption h1{
+   font-size: 40px;
+}
+.categoryLinks a{
+   float:left;
+}
+
+
+	
+}

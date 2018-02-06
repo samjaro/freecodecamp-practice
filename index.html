@@ -31,87 +31,158 @@
     <link rel="stylesheet" href="smcrafts.css">
     
 </head>
+
 <body>
-
-
-
-
-<nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container-fluid">
+<div class="container">
+<div class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+        </button>
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="index.html"> Samantha Roach</a>
+        <a class="navbar-brand" href="index.html">Sammy</a>
         </div>
         
-        <div class="collapse navbar-collapse" id="myNavbar">
+        <div class="collapse navbar-collapse nav-collapse  navbar-responsive-collapse" id="myNavbar">
+        
             <form class="navbar-form navbar-right">
                 <div class="form-group">
                     <input class="form-control" type="text" name="search" placeholder="search" id="searchInput">
                     <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
                 </div>
-                
             </form>
-            <ul class="nav navbar-nav navbar-right">
+            
+<ul class="nav navbar-nav navbar-right">
                     <li class="active"> <a href="smcraftsAbout.html">About</a></li>
                     <li class="dropdown">
                         <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span>&nbsp;Gallery</a>
                         <ul class="dropdown-menu">
+                            <li><a href="smcraftsGalleryPe.html">All</a></li>
+                            <li class="divider"></li>	
                             <li><a href="smcraftsGalleryPe.html">Pencil</a></li>
                             <li><a href="smcraftsGalleryAc.html">Acrylic</a></li>
-                            <li><a href="smcraftsGalleryCa.html">Greetings cards</a></li>
-                            <li><a href="smcraftsGalleryCr.html">Crafts</a></li>    
+                            <li class="divider"></li>	
+							<li class="dropdown-header">Sam made paper</li>
+                            <li><a href="smcraftsGalleryCa.html">Greetings cards</a></li> 
+                            <li><a href="smcraftsGalleryPe.html">Notebooks</a></li>
                         </ul>
-                    </li>    
+                    </li>
+                    
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span>&nbsp;Sam made paper</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="smcraftsPaper.html">Sam made paper</a></li>
+                            <li class="divider"></li>	
+                            <li><a href="smcraftsGreetingsCards.html">Greetings cards</a></li>
+                            <li><a href="smcraftsNotebooks.html">Notebooks & Journals</a></li>
+							<li><a href="smcraftsPacks.html">Packets of paper</a></li>
+                        
+                        </ul>
+                    </li>
+                    <li><a href="smcraftsContact.html">Sam made art</a></li>                     
                     <li><a href="smcraftsShop.html">Shop</a></li>
                     <li><a href="smcraftsContact.html">Contact</a></li>       
-            </ul>         
+            </ul>          
         </div>
-     
     </div>
-</nav>
-
+</div><!--end nav-->
+</div><!--end nav container-->
 
 
 
 <section class="main-container">
-    <section class="jumbotron" id="landingTopBg">    
+    <div class="jumbotron" id="landingTopBg">    
         <div class="container">
             <div class="row text-center">
                 <h2>Sam Made Crafts</h2>
                 <h3>Ecological crafts inspired by nature</h3>
             </div>
         </div>
-    </section>    
+    </div>    
 </section>
 
+    <div id="midPage">   
+        <h2><strong> What we do </strong></h2>    
+        <img src="http://leesamantha.com/wp-content/uploads/2015/10/section-divider-1.png">
+    </div> 
+
+
+<div class="container centralFrame"><!-- central frame holds and centralises the 2 website categories display panels: handmade paper and bespoke drawings-->
+    <div class="row">
+        <div class="col-sm-6">
+        
+            <div class="panel">
+                <div class="panelInner">
+                    <div class="panelImgHolder">
+                        <img src="images/foxcard2LG.jpg">
+                    </div>
+                    <h3>Crafts made from handmade recycled paper</h3>
+                    <h4><strong><a class="eco" href="smcraftsPaper.html">Sam made paper</a></strong></h4>
+                    <p>Unique ECO friendly greetings cards and notebooks made from handmade paper. I recycle any unwanted paper from aronud the house and office, combining colours to make beautiful designs.</p>
+                    <div class="readMore">
+                        <div class="readMoreBox">
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </div>
+                        <p><a class="eco" href="#">Read more</a></p>
+                    </div>
+                    
+                </div>
+            </div>
+        </div><!--end of col-sm-6-->
+ 
+    
+        <div class="col-sm-6 ">
+            <div class="panel ">
+                
+                    <div class="panelImgHolder">
+                        <img src="images/lion2.jpg">
+                    </div>
+                    <h3>Personalised portrait of your pet, house or garden</h3>
+                    <h4><strong><a class="art" href="smcraftsArt.html">Sam made art</a></strong></h4>
+                    <p>A unique illustration of your pet, house or garden. Hand-drawn with pen or pencil and personalised with a message of your choice - a perfect gift for every proud home owner or pet lover.</p>
+                    <div class="readMore">
+                        <div class="readMoreBox">
+                            <span class="glyphicon glyphicon-menu-right"></span>
+                        </div>
+                        <p><a class="art" href="#">Read more</a></p>
+                    </div>
+                 
+            </div>
+        </div><!--end of col-sm-6-->
+    </div><!--end of row-->
 
 
 
-<section class="container-fluid" id="midPage">
+</div>
+<div class="container-fluid white" >
     <div class="row">
         <div class="col-sm-12">
-            <h3 id="quote"><strong> “I dream my art, then I paint my dream" - Vincent Van Gogh </strong></h3>  
+            <h3 id="quote"><strong> “I'll probably put a quote here" - Vincent Van Gogh </strong></h3>  
         </div>   
-    </div>    
-       
+    </div>
+</div><!--end of quote div-->  
+
+
+
+  
+    
+    <div id="midPage">   
         <h2><strong> my work </strong></h2>    
         <img src="http://leesamantha.com/wp-content/uploads/2015/10/section-divider-1.png">
            
         
         <div class="row">
-            <ul class="col-lg-12">
-                <li> <a href="smcraftsGalleryPe.html"><h3>Pencil drawings</h3></a></li>
-                <li> <a href="smcraftsGalleryAc.html"><h3>Acrylic Paintings</h3></a><li>    
-                <li> <a href="smcraftsGalleryCa.html"><h3>Greetings cards</h3></a></li>
-                <li> <a href="smcraftsGalleryCr.html"><h3>Crafts</h3></a></li>  
-            </ul>                   
+            <div class="col-lg-12 categoryLinks">
+                <a href="smcraftsGalleryPe.html"><h4>Pencil drawings</h4></a>
+                <a href="smcraftsGalleryAc.html"><h4>Acrylic Paintings</h4></a>
+                <a href="smcraftsGalleryCa.html"><h4>Greetings cards</h4></a>
+            </div>                   
         </div>
-    </div>    
-</section>  
+    </div>  
+       
+ 
  
 
  <!--carousel-->
@@ -265,7 +336,7 @@
 
  
  
- 
+
 <footer class="container">
     <div class="row">
         <p class="col-sm-4">&copy; sam made crafts</p>

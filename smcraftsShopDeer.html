@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- The below 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, scale=1">
+    
+    <title>Sam made crafts</title> 
+   
+    
+    
+    <!-- Include Modernizr in the head, before any other Javascript -->
+	<script src="includes/js/modernizr-2.6.2.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+    
+    
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+    
+    <!-- Bootstrap CSS -->
+
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="includes/css/bootstrap-glyphicons.css" rel="stylesheet">    
+    <link rel="stylesheet" href="smcrafts.css">
+    
+</head>
+<body>
+
+
+
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="index.html"> Samantha Roach</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+            <form class="navbar-form navbar-right">
+                <div class="form-group">
+                    <input class="form-control" type="text" name="search" placeholder="search" id="searchInput">
+                    <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+                </div>
+                
+            </form>
+            <ul class="nav navbar-nav navbar-right">
+                    <li class="active"> <a href="smcraftsAbout.html">About</a></li>
+                    <li class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="caret"></span>&nbsp;Gallery</a>
+                        <ul class="dropdown-menu">
+                            <li><a href="smcraftsGalleryPe.html">Pencil</a></li>
+                            <li><a href="smcraftsGalleryAc.html">Acrylic</a></li>
+                            <li><a href="smcraftsGalleryCa.html">Greetings cards</a></li>
+                            <li><a href="smcraftsGalleryCr.html">Crafts</a></li>    
+                        </ul>
+                    </li>    
+                    <li><a href="smcraftsShop.html">Shop</a></li>
+                    <li><a href="smcraftsContact.html">Contact</a></li>       
+            </ul>         
+        </div>
+     
+    </div>
+</nav>
+
+
+
+
+<section class="main-container">
+    <section class="jumbotron shopJumbo" id="landingTopBg">    
+        <div class="container">
+            <div class="row text-center">
+                <a href="smcraftsShop.html"><h2>Shop</h2></a>
+            </div>
+        </div>
+    </section>    
+</section>
+
+
+
+
+
+
+<section class="container" id="shop">
+    <div class="centralFrame">  <!--class from ABOUT page which centralises the txt box-->
+        <div class="row"><!--row for alignment of image next to text-->
+            <div class="col-sm-6">
+                <a href="#deerModal" data-toggle="modal"><img src="images/ddeercardLG.jpg" class="pull-left largeImg"></a>
+                <a href="#deerModal" class="pull-left" data-toggle="modal">See all images</a>
+             
+                
+                
+                
+                <div class="modal fade" id="deerModal">
+								<div class="modal-dialog">
+									<div class="modal-content">
+										<div class="modal-header">
+											<button class="close" data-dismiss="modal">&times;</button>
+										</div><!--end of modal-header-->
+											
+											<div class="modal-body">
+												<div class="row">
+                                                    <div class="col-sm-6">
+                                                        <img src="images/ddeercardLG.jpg" class="pull-left">
+                                                    </div>
+                                                    <div class="col-sm-6">
+                                                        <h4>Deer on a hill</h4>
+                                                        <p>Click on the image to enlarge it</p>
+                                                        <hr>
+                                                        <div class="miniGallery">
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/ddeercard2XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/ddeercard3XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->
+                                                                </div>
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/ddeercard4XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col-sm-4">
+                                                                    <div class="miniGalleryPicContainer">
+                                                                        <img src="images/ddeercard5XS.jpg">
+                                                                    </div><!--end miniGalleryPicContainer-->                                                           
+                                                                </div>
+                                                        
+                                                             
+                                                            </div>
+                                                            
+                                                            
+                                                        </div><!--end mini galery-->
+                                                    </div>
+                                                </div>
+                                            </div><!--end of modal-body-->
+                                            
+                                            
+											<div class="modal-footer">
+													<button class="btn btn-default" data-dismiss="modal" type="button">Close</button> 
+											</div><!--end modal-footer-->
+										
+									</div><!--end of modal-content-->
+								</div><!--end of modal-dialog-->
+                </div><!--end of deerModal-->
+                
+                
+                
+                   
+            </div><!--end of--col-sm-6 for image-->
+
+
+
+
+            
+            <div class="col-sm-6">
+                <h4>Deer on a hill</h4>
+                <h5 class="price"><strong>£5</strong></h5> 
+                <hr>
+                <p>Christmas deer watching the snow, details handpainted in acrylic.</p>
+                <p><strong>Materials:</strong> Handmade paper, sequins, string.</p>
+                <p><strong>Handmade paper</strong> made in my kitchen, from an assortment of scrap paper including junk mail, old envelopes and discarded paper from the office.</p>
+                <p>I combine the paper to create the colours for my designs, turning unwanted scrap into something beautiful.</p>
+        
+                <div class="form-group">
+                    <label for="quantity">Quantity:</label>
+                    <select class="form-control" id="quantityField" onblur="checkQuantityField()">
+                        <option>1</option>
+                        <option>2</option> 
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>                        
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                    </select>    
+                </div> 
+                 <button type="button" class="btn btn-secondary"><spam class="glyphicon glyphicon-shopping-cart"></spam> Add to basket</button>
+                                                                                                                
+            </div>  
+        </div><!--end row- with pic and pic text-->        
+		<hr>
+         <a href="smcraftsShop.html"><span class="glyphicon glyphicon-chevron-left"></span> Return to shop</a>
+         
+
+    </div><!--end text-box-->
+</section><!--end container-->
+
+
+
+
+
+
+
+ 
+
+ <!--carousel-->
+ <div class="carousel slide" id="myCarousel">
+
+			<!--Indicators-->
+			<ol class="carousel-indicators">
+				<li class="active" data-slide-to="0" data-target="#myCarousel"></li>
+				<li data-slide-to="1" data-target="#myCarousel"></li>
+				<li data-slide-to="2" data-target="#myCarousel"></li>
+                <li data-slide-to="3" data-target="#myCarousel"></li>
+			</ol>
+
+
+<!-- wrapper for slides -->
+			<div class="carousel-inner">
+<!--slides-->
+				<div class="item active" id="slide1">
+                    <a href="smcraftsGalleryPe.html">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="sliderPicContainer">
+                                    <img src="images/cuestaSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/woodsSM.jpg">
+                                </div>    
+                            </div>
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/lionSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/orangutanSM.jpg">
+                                </div>    
+                            </div>	
+                        </div>	
+                        <div class="carousel-caption">
+                            <h1>Pencil Drawings</h1>
+                            <p>View my pencil drawings</p>
+                        </div><!--carousel-caption-->
+                    </a>    
+				</div><!--item slide 1-->
+
+				<div class="item" id="slide2">				
+					<a href="smcraftsGalleryAc.html">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="sliderPicContainer">
+                                    <img src="images/emilywoodsSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/flamingoSM.jpg">
+                                </div>    
+                            </div>
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/chameleonpicSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/flamingoblueSM.jpg">
+                                </div>    
+                            </div>	
+                        </div>	
+                        <div class="carousel-caption">
+                            <h1>Paintings</h1>
+                            <p>Have a look at my paintings in acrylic</p>
+                        </div><!--carousel-cation-->
+                    </a>
+				</div><!--item slide 2-->
+
+				<div class="item" id="slide3">				
+                    <a href="smcraftsGalleryCa.html">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="sliderPicContainer">
+                                    <img src="images/foxcardSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/deercardSM.jpg">
+                                </div>    
+                            </div>
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/penguincardSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/robincardSM.jpg">
+                                </div>    
+                            </div>	
+                        </div>	
+                        <div class="carousel-caption">
+                            <h1>Greetings cards</h1>
+                            <p>Greetings cards made from handmade paper</p>
+                        </div><!--carousel-cation-->
+                    </a>
+				</div><!--item slide 3-->
+                
+                				<div class="item" id="slide4">				
+                    <a href="smcraftsGalleryCa.html">
+                        <div class="row">
+                            <div class="col-xs-12 col-sm-3">
+                                <div class="sliderPicContainer">
+                                    <img src="images/foxcardSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/deercardSM.jpg">
+                                </div>    
+                            </div>
+                            <div class="col-xs-12 col-sm-3 hidden-xs">		
+                                <div class="sliderPicContainer">
+                                    <img src="images/penguincardSM.jpg">
+                                </div>    
+                            </div>	
+                            <div class="col-xs-12 col-sm-3 hidden-xs">
+                                <div class="sliderPicContainer">
+                                    <img src="images/robincardSM.jpg">
+                                </div>    
+                            </div>	
+                        </div>	
+                        <div class="carousel-caption">
+                            <h1>Greetings cards</h1>
+                            <p>Greetings cards made from handmade paper</p>
+                        </div><!--carousel-cation-->
+                    </a>
+				</div><!--item slide 3-->
+			</div>	<!--carousel-inner-->
+			
+
+			<!-- controls-->
+			<a class="left carousel-control" data-slide="prev" href="#myCarousel"><span class="icon-prev"></span></a>
+			<a class="right carousel-control" data-slide="next" href="#myCarousel"><span class="icon-next"></span></a>
+			
+
+
+		</div><!-- end carousel -->	
+
+ 
+ 
+ 
+<footer class="container">
+    <div class="row">
+        <p class="col-sm-4">&copy; sam made crafts</p>
+        <ul class="col-sm-8">
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/twitter.svg"></li>
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/facebook.svg"></li>
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/instagram.svg"></li>
+            <li class="col-sm-1"><img src="https://s3.amazonaws.com/codecademy-content/projects/make-a-website/lesson-4/medium.svg"></li>
+        </ul>
+        
+    </div> 
+</footer> 
+</body>
+</html>
