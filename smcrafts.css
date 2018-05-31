@@ -25,7 +25,7 @@ h1, h2, h3, h4 {
 }
 
 h3 small{
-    color:rgb(144, 12, 63);
+    color:rgb(75, 193, 91);
 }
 #quote {
     colorrrr: rgb(144, 12, 63);
@@ -151,6 +151,14 @@ ul {
 /* --------------------------------------
    code for frames to hold context and images
    -------------------------------------- */
+   
+.centralNarrowContainer{
+    margin:0 10vw 0 10vw;
+}   
+
+.piled{
+    display:block;
+}
 
 .centralFrame {  /*used on ABOUT, SHOP AND SHOP ITEM pages*/
     display: block;
@@ -179,10 +187,6 @@ ul {
    
 .panel{ /* used for picFrame model to display frames selections */
     padding:18px;
-    max-width: 380px;
-    aaaaaaalign-items: center;
-    ttttttttext-align: center;
-    background-color:reddddd;
     
 }
 .panel.h4{
@@ -193,17 +197,12 @@ ul {
 }
 
 .panel img{ /*used in picFrame modal */
-   paddinggggg:20px;
    text-align:center;
 }
 
    
 .panelImgHolder{
-    widthhhh:340px;
-    heightttt:240px;
-    widthhh:25vw;
-    heightttt:21vw;
-    padding:0px;
+    margin:auto;
     
 }
 
@@ -495,17 +494,18 @@ ul {
 .card{
     display: flex;
     flex-direction: column;
-    text-align:justify;    
-    height: 300px;
-    width:230px;
     position: relative;
-    marginn: 20 30 10 30px;
+    text-align:justify;    
     margin:auto;
     margin-top:20px;
+    max-width:230px;
+    heighttt: 300px;
+    widthhh:230px;
+    background-color:blueee;
 }
 
 .card a img{   
-    position:absolute;
+    position:absoluteeee;
     opacity:1;
     width:100%;
     height:100%;
@@ -544,6 +544,15 @@ ul {
 .card:hover .cardMiddle {
   opacity: 1;
 }
+
+/* --------------------------------------
+   code for modal
+   -------------------------------------- */
+.modal-dialog{
+    max-width:1000px;
+}
+
+
 
 
 
@@ -629,10 +638,10 @@ ul {
 }
    
 #shop img{
-    margin:0 50px 0px 0;
+    margin:0 50px 8px 0;
 }
 #shop .largeImg{
-    margin:0px 50px 10px 0;
+    margin:0px 80px 10px 0;
 }
 #shop h4{
     margin-top: 0 ;
@@ -786,11 +795,7 @@ ul {
     .carousel-caption h1{
         font-size: 18px;
     }
-    
-    .centralFrame{
-        width:100vh;
-    }
-    
+
     
 }
 
@@ -818,6 +823,26 @@ ul {
 .cattegoryLinks a{
    float:left;
 }
+
+#quote{
+    font-size:15px;
+}
+
+    .centralNarrowContainer{
+        margin:0 0 0 0;
+    }
+    
+    .white{
+        padding:40px;
+    }
+    
+    .panel{
+        width:70vw;
+        margin-left:auto;
+        margin-right:auto;
+    }
+    
+
 
 }
 /* Large desktop .........................................................................................................................*/
